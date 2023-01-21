@@ -1,7 +1,7 @@
 {
   "name": "202301-w2chwe-victor-granda",
   "version": "1.0.0",
-  "main": "./gameOfLife/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "jest",

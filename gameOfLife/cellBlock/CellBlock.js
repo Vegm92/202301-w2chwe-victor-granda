@@ -1,4 +1,4 @@
-class cellBlock {
+class CellBlock {
   xPosition;
   yPosition;
 
@@ -27,4 +27,4 @@ class cellBlock {
   }
 }
 
-export default cellBlock;
+export default CellBlock;

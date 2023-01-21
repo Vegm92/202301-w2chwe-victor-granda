@@ -1,7 +1,6 @@
 class CellBlock {
   xPosition;
   yPosition;
-
   isAlive = false;
   willSpawn = false;
 

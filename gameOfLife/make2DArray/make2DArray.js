@@ -1,7 +1,7 @@
-const make2DArray = (columns, rows, test) => {
+const make2DArray = (columns, rows, cell) => {
   const array = Array(columns)
-    .fill(test)
-    .map(() => Array(rows).fill(test));
+    .fill(cell)
+    .map(() => Array(rows).fill(cell));
 
   return array;
 };

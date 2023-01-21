@@ -5,7 +5,7 @@ describe("Given the function  make2DArray ", () => {
     test("Then it should return a bidemnsional array of 3 test each", () => {
       const arrayColumns = 3;
       const arrayRows = 3;
-      const arrayTest = "test";
+      const cellTest = "test";
 
       const array = [
         ["test", "test", "test"],
@@ -14,7 +14,7 @@ describe("Given the function  make2DArray ", () => {
       ];
       const expectedResult = array;
 
-      const result = make2DArray(arrayColumns, arrayRows, arrayTest);
+      const result = make2DArray(arrayColumns, arrayRows, cellTest);
 
       expect(result).toStrictEqual(expectedResult);
     });

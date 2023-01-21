@@ -1,4 +1,4 @@
-class Cellunit {
+class cellBlock {
   xPosition;
   yPosition;
 
@@ -27,4 +27,4 @@ class Cellunit {
   }
 }
 
-export default Cellunit;
+export default cellBlock;

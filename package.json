@@ -1,7 +1,8 @@
 {
   "name": "202301-w2chwe-victor-granda",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./gameOfLife/index.js",
+  "type": "module",
   "scripts": {
     "test": "",
     "prepare": "husky install"
@@ -35,5 +36,8 @@
       }
     }
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "eslint-config": "^0.2.1"
+  }
 }

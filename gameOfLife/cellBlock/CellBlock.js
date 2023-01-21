@@ -3,6 +3,7 @@ class CellBlock {
   yPosition;
   isAlive = false;
   willSpawn = false;
+  numberOfNeighbors = 0;
 
   constructor(xPosition, yPosition) {
     this.xPosition = xPosition;

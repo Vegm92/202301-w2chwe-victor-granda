@@ -1,14 +1,14 @@
-const hasNeighbors = (CellBlock, grid) => {
+const checkNeighbors = (cellBlock, grid) => {
   const height = grid.length;
   const width = grid[0].length;
-
-  const xValueCellBlock = CellBlock.xPosition;
-  const yValueCellBlock = CellBlock.yPosition;
-
+  const xValueCellBlock = cellBlock.xPosition;
+  const yValueCellBlock = cellBlock.yPosition;
   const neighborsAtTop = yValueCellBlock === 0 ? 0 : -1;
   const neighborsAtBottom = yValueCellBlock === height - 1 ? 0 : 1;
   const neighborsAtLeft = xValueCellBlock === 0 ? 0 : -1;
   const neighborsAtRight = xValueCellBlock === width - 1 ? 0 : 1;
+
+  let neighborsCounter = 0;
 
   for (
     let topToBottomLimit = yValueCellBlock + neighborsAtTop;
@@ -21,19 +21,18 @@ const hasNeighbors = (CellBlock, grid) => {
       leftToRightLimit++
     ) {
       if (grid[topToBottomLimit][leftToRightLimit] === 1) {
-        CellBlock.numberOfNeighbors++;
+        neighborsCounter++;
       }
     }
   }
 
-  if (CellBlock.isAlive === true) {
-    CellBlock.numberOfNeighbors--;
+  if (cellBlock.isAlive === true) {
+    neighborsCounter--;
   }
 
   return (
-    CellBlock.numberOfNeighbors === 3 ||
-    (CellBlock.isAlive && CellBlock.numberOfNeighbors === 2)
+    neighborsCounter === 3 || (cellBlock.isAlive && neighborsCounter === 2)
   );
 };
 
-export default hasNeighbors;
+export default checkNeighbors;

@@ -8,7 +8,6 @@ describe("Given the class CellBlock", () => {
 
       const objectResult = {
         isAlive: false,
-        numberOfNeighbors: 0,
         willSpawn: false,
         xPosition: 5,
         yPosition: 5,

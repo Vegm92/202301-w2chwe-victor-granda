@@ -1,5 +1,5 @@
 import CellBlock from "../cellBlock/CellBlock.js";
-import hasNeighbors from "./hasNeighbors.js";
+import checkNeighbors from "./checkNeighbors.js";
 
 describe("Given the function hasNeighbors", () => {
   describe("When on a 3x3 grid with 4 neighbors we check if the center cell will survive", () => {
@@ -15,7 +15,7 @@ describe("Given the function hasNeighbors", () => {
 
       const expectedResult = false;
 
-      expect(hasNeighbors(cell, testGrid)).toEqual(expectedResult);
+      expect(checkNeighbors(cell, testGrid)).toEqual(expectedResult);
     });
   });
   describe("When on a 3x3 grid with 2 neighbors we check if the center cell will survive", () => {
@@ -30,7 +30,7 @@ describe("Given the function hasNeighbors", () => {
 
       const expectedResult = true;
 
-      expect(hasNeighbors(cell, testGrid)).toEqual(expectedResult);
+      expect(checkNeighbors(cell, testGrid)).toEqual(expectedResult);
     });
   });
 
@@ -47,7 +47,7 @@ describe("Given the function hasNeighbors", () => {
 
       const expectedResult = false;
 
-      expect(hasNeighbors(cell, testGrid)).toEqual(expectedResult);
+      expect(checkNeighbors(cell, testGrid)).toEqual(expectedResult);
     });
   });
 });
